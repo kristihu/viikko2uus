@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tehtävä2</h1>
+<script>
+  'use strict';
+  let nimi , luku;
+
+  nimi = prompt("Mikä sinun nimesi on?")
+  luku = Math.floor((Math.random() * 4) + 1);
+
+  if (luku === 1){
+    document.write(' ' +nimi+' Sinusta tuli Rohkelikon jäsen!');
+  }
+
+  else if (luku === 2){
+    document.write(' ' +nimi+' Sinusta tuli luihuisen jäsen!');
+  }
+  else if (luku === 3){
+    document.write(' ' +nimi+' Sinusta tuli puuskupuhin jäsen!');
+  }
+  else {
+    document.write(' ' +nimi+' Sinusta tuli korpinkynnen jäsen!');
+  }
+
+
+
+
+</script>
+
+</body>
+</html>

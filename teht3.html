@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teht3</title>
+</head>
+<body>
+<h1>teht3</h1>
+<script>
+  'use strict';
+  let hemarvo, sukupuoli;
+
+
+  sukupuoli = prompt("Oletko mies vai nainen?")
+  hemarvo = prompt("Entä paljon on sinun hemoglobiiniarvo?")
+
+
+  if (sukupuoli === 'mies' && hemarvo < 134){
+      document.write('Hemoglobiinisi on '+hemarvo+'g/l eli se on liian alhainen');
+    }
+    else if (sukupuoli === 'mies' && hemarvo > 195){
+      document.write('Hemoglobiinisi on '+hemarvo+'g/l eli se on liian korkea');
+    }
+    else if (sukupuoli === 'mies' && hemarvo > 134 && hemarvo < 195){
+      document.write('Hemoglobiinisi on '+hemarvo+'g/l eli se on juuri soviva!');
+    }
+    else if (sukupuoli === 'nainen' && hemarvo < 117){
+      document.write('Hemoglobiinisi on '+hemarvo+' g/l eli se on liian matala');
+    }
+    else if (sukupuoli === 'nainen' && hemarvo > 175){
+      document.write('hemoglobiinisi on '+hemarvo+' eli se on liian suuri!');
+    }
+    else {
+      document.write('Hemoglobiinisi on '+hemarvo+' eli se on juuri sopiva!');
+    }
+</script>
+</body>
+</html>

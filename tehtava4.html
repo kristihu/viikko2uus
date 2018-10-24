@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teht4</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let bussilippu;
+  let rahamaara;
+  let loppu;
+  rahamaara = prompt("Paljonko sinulla on rahaa?");
+  bussilippu = prompt("Paljonko bussilippu maksaa?");
+  loppu = rahamaara - bussilippu;
+
+  if (rahamaara >= bussilippu){
+
+    document.write('Sinulla riitti rahat bussiin, ja tilillesi jäi rahaa '+loppu+'Euroa');
+  }
+  else {
+    document.write('sinulla ei riittänyt rahaa bussiin, tililläsi on rahaa '+rahamaara+'Euroa')
+
+
+  }
+
+
+
+</script>
+
+</body>
+</html>
